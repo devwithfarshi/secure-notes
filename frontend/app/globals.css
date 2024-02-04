@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Source Sans 3", sans-serif;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5% !important;
+}
+
+/* My Css */
+.btn {
+  @apply font-bold text-[1.8rem] text-light;
+}
+
+.btn-primary {
+  @apply bg-primary;
+}
+
+.tabs_heading {
+  @apply text-3xl font-semibold relative;
+}
+
+.tabs_heading.active_tab {
+  @apply after:content-center after:bg-light after:absolute after:-bottom-2 after:left-0.5 after:h-[0.3rem] after:w-full;
+}
+.input_filed {
+  @apply shadow border rounded w-full p-3 bg-transparent  text-3xl leading-tight focus:outline-none;
+}
+
+.toast-container {
+  @apply text-3xl font-bold;
+}
