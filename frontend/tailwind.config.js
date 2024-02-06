@@ -14,6 +14,8 @@ module.exports = {
       dark: "#232323",
       light: "#ffffff",
       bgLight: "#f7f7f7",
+      hoverCardBg: "rgba(255,255,255,0.1)",
+      cardBg: "rgba(255,255,255,0.3)",
     },
     container: {
       center: true,

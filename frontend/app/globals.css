@@ -4,12 +4,14 @@
 @tailwind utilities;
 
 * {
-  font-family: "Source Sans 3", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+  font-family: "Source Sans 3", sans-serif;
 }
 html {
   font-size: 62.5% !important;
@@ -37,4 +39,11 @@ html {
 
 .toast-container {
   @apply text-3xl font-bold;
+}
+
+.semibold-font {
+  @apply font-semibold text-[1.6rem];
+}
+.addNote-btn {
+  @apply w-full bg-[rgba(255,255,255,0.3)] py-[1rem] transition-all duration-100 hover:bg-[rgba(255,255,255,0.5)];
 }
